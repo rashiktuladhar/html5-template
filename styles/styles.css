@@ -4,11 +4,17 @@
     font-family: SourceSansPro;
     src: url("../fonts/SourceSansPro-Light.otf");
 }
+.light-yellow{ background-color: #FFF689 !important;}
+.light-blue{background-color: #B2F0F9;}
+.light-green{background-color: #89FFA2;}
+.light-red{background-color: #FFA7A7;}
+.clear-fix{clear:both;}
 
 body
 {
 	padding:0;
 	margin:0 auto;
+	background: #404040;
 }
 
 .navigation-block
@@ -44,7 +50,6 @@ nav ul li
 	display: inline;
 	padding:20px;
 	height:50px;
-	width: 100px;
 }
 
 nav ul li a
@@ -56,11 +61,23 @@ nav ul li a
 	text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
 	border-bottom: 2px solid #000;
 	font-weight: 400;
+	transition:all 1s;
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	-ms-transition:all 1s;
+}
+
+
+nav ul li a:hover
+{
+	border-bottom:0px solid;
+	background: #FFF;
+	padding:10px;
 }
 
 .about-us
 {
-	margin-top: -225px;
+	margin-top: -223px;
 	padding: 20px;
 	background: rgba(0,0,0,0.5);
 	color:#FFF;
@@ -80,21 +97,31 @@ nav ul li a
 
 .features
 {
-	padding-left: 20px;
-	padding-right: 20px;
 	font-family: SourceSansPro;
+	padding-bottom: 20px !important;
+}
+
+.features header
+{
+	padding-left: 20px;
+	background-image: url("../images/bg.png");
+	background-size: cover;
+	color:#FFF;
 }
 
 .features article
 {
-	width: 24%;
+	width: 25%;
 	float: left;
-	margin-right:5px;
 }
 
 .features article header
 {
-	background: #FFF;
+	padding-top: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+	color:#404040;
 }
 
 .features article p
@@ -108,4 +135,57 @@ nav ul li a
 .features article footer
 {
 	padding: 5px;
+	text-align: right;
+}
+
+.features article footer a
+{
+	text-decoration: none;
+	color:green;
+	display: block;
+	padding-bottom: 10px;
+}
+
+
+.tariff
+{
+	padding-top: 5px;
+	padding-left: 20px;
+	font-family: SourceSansPro;
+	color:#FFF;
+}
+
+.tariff .tariff-table
+{
+	width: 50%;
+	float: left;
+}
+
+.tariff .tariff-table table
+{
+	text-align: left;
+	width: 100%;
+}
+
+.tariff .tariff-note
+{
+	width: 50%;
+	float: left;
+}
+
+footer
+{
+	padding-top: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: SourceSansPro;
+	color:#FFF;
+}
+
+footer p
+{
+	text-align: right;
+	-ms-transform: rotate(5deg); 
+    -webkit-transform: rotate(5deg); 
+    transform: rotate(5deg);
 }
