@@ -72,6 +72,8 @@ nav ul li a:hover
 	border-bottom:0px solid;
 	background: #FFF;
 	padding:10px;
+	border-radius: 50px;
+	
 }
 
 .about-us
@@ -112,6 +114,17 @@ nav ul li a:hover
 {
 	width: 25%;
 	float: left;
+	transition:box-shadow 1s;
+	-webkit-transition:box-shadow 1s;
+	-moz-transition:box-shadow 1s;
+	-ms-transition:box-shadow 1s;
+}
+
+.features article:hover
+{
+-webkit-box-shadow: 0px 4px 5px 0px rgba(168,166,168,1);
+-moz-box-shadow: 0px 4px 5px 0px rgba(168,166,168,1);
+box-shadow: 0px 4px 5px 0px rgba(168,166,168,1);
 }
 
 .features article header
